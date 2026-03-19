@@ -22,6 +22,13 @@ Our group, which consisted of 8 students, split up into multiple sub-groups, wit
 
 The chassis is made out of wood and was produced by laser cutting. The parts on the OTV were designed using OnShape's CAD software and 3D printed using Prusa. The OTV was programmed using Arduino.
 
+These were all of the sensors and components which we wired and programmed:
+- Ultrasonic sensor
+- Pressure sensor
+- Servo motor (2)
+- DC motor (4, connected to L298N motor driver)
+- ESP32 WiFi module
+
 Our approach for the navigation algorithm was the following:
 - For turning, turn a certain number of degrees (calculated by subtracting the desired orientation angle from the OTV's current orientation angle) as close as it can, then "nudge" the OTV to the desired orientation using the overhead vision system
 - When navigating through the obstacles, have the OTV go forward until it detects an obstacle ahead of it; once detected, have the OTV move to the next zone above/below it (depending on where it started) and repeat
